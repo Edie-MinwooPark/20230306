@@ -1,0 +1,60 @@
+.ryan{
+    width: 500px;
+    height: 500px;
+    
+}
+
+.ryan img{
+    animation: anis 2s ease;
+}
+
+
+@keyframes ani {
+    0%{
+        /* 전체 동작중 0~50%까지의 내용 */
+        transform: rotate(0);
+    }
+    50%{
+        /* 전체 동작중에 50일때 */
+        transform: rotate(360deg);
+    }
+    100%{
+        /* 전체 동작하면서 50~100% 까지 */
+        transform: rotate(0);
+    }
+}    
+
+
+@media only screen and (max-width: 1200px){
+    .ryan{
+        border: 1px solid red;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .ryan{
+        border: 1px solid green;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .ryan{
+        border: 1px solid blue;
+    }
+}
+
+
+
+@keyframes anis {
+    0%{
+        transform: rotate(0);
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+}
+
+

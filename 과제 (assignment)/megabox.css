@@ -1,0 +1,126 @@
+
+
+
+.tabmenu > label{
+    
+    display: inline-block;
+    border: solid blue;
+    width: 230px;
+    height: 30px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.tabmenu > input{
+    display: none;
+}
+
+input[class="tab01"]:checked ~.movies1{
+    display: block;
+
+}
+input[class="tab02"]:checked ~.movies2{
+    display: block;
+
+}
+input[class="tab03"]:checked ~.movies3{
+    display: block;
+}
+input[class="tab04"]:checked ~.movies4{
+    display: block;
+}
+input[class="tab05"]:checked ~.movies5{
+    display: block;
+}
+    
+.box{
+    width: 1300px;
+    
+    height: 900px;
+    position: relative;
+    display: none;
+
+}
+
+.textbox{
+    position: absolute;
+    top: 41px;
+    left: 1004px;
+    height: 24px;
+    background-image: url(https://img.megabox.co.kr/static/pc/images/common/btn/btn-search-input.png);
+    background-repeat: no-repeat;
+    background-position-x: 136px;
+    background-position-y: 5px;
+    
+}
+
+.textline{
+    width: 100px;
+    height: 100px;
+}
+
+.posterbox{
+    width: 300px;
+    height: 450px;
+    border: 1px solid black;
+    position: relative;
+    margin-right: 10px;
+}
+
+.movieimage{
+    width: 300px;
+    height: 310px;
+}
+
+.w{
+    position: absolute;
+    top: 306px;
+    left: 40px;
+}
+
+.ageimage{
+    position: absolute;
+    top: 323px;
+    left: 9px;
+    width: 25px;
+    height: 25px;
+}
+
+.button{
+    height: 34px;
+    width: 80px;
+    
+    border-radius: 5px;  
+   
+
+}
+
+.button2, .button3 {
+    background-color: blueviolet;
+}
+.buttonposition{
+    position: absolute;
+    top: 401px;
+    left: 24px; 
+}
+
+.sub_tag{
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    width: 300px;
+    height: 310px;
+    text-align: center;
+    position: absolute;
+    display: none;
+    top: 1px;
+    right: 1px;
+}
+
+.poster:hover .sub_tag{
+    display: inline;
+}
+
+.movierow{
+    display: flex;
+}
